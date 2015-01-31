@@ -15,6 +15,7 @@ C_SRCS_QUOTED += \
 "../Generated_Code/SERVO1.c" \
 "../Generated_Code/TU1.c" \
 "../Generated_Code/Vectors.c" \
+"../Generated_Code/WAIT1.c" \
 
 C_SRCS += \
 ../Generated_Code/AD1.c \
@@ -26,6 +27,7 @@ C_SRCS += \
 ../Generated_Code/SERVO1.c \
 ../Generated_Code/TU1.c \
 ../Generated_Code/Vectors.c \
+../Generated_Code/WAIT1.c \
 
 OBJS += \
 ./Generated_Code/AD1_c.obj \
@@ -37,6 +39,7 @@ OBJS += \
 ./Generated_Code/SERVO1_c.obj \
 ./Generated_Code/TU1_c.obj \
 ./Generated_Code/Vectors_c.obj \
+./Generated_Code/WAIT1_c.obj \
 
 OBJS_QUOTED += \
 "./Generated_Code/AD1_c.obj" \
@@ -48,6 +51,7 @@ OBJS_QUOTED += \
 "./Generated_Code/SERVO1_c.obj" \
 "./Generated_Code/TU1_c.obj" \
 "./Generated_Code/Vectors_c.obj" \
+"./Generated_Code/WAIT1_c.obj" \
 
 C_DEPS += \
 ./Generated_Code/AD1_c.d \
@@ -59,6 +63,7 @@ C_DEPS += \
 ./Generated_Code/SERVO1_c.d \
 ./Generated_Code/TU1_c.d \
 ./Generated_Code/Vectors_c.d \
+./Generated_Code/WAIT1_c.d \
 
 C_DEPS_QUOTED += \
 "./Generated_Code/AD1_c.d" \
@@ -70,6 +75,7 @@ C_DEPS_QUOTED += \
 "./Generated_Code/SERVO1_c.d" \
 "./Generated_Code/TU1_c.d" \
 "./Generated_Code/Vectors_c.d" \
+"./Generated_Code/WAIT1_c.d" \
 
 OBJS_OS_FORMAT += \
 ./Generated_Code/AD1_c.obj \
@@ -81,6 +87,7 @@ OBJS_OS_FORMAT += \
 ./Generated_Code/SERVO1_c.obj \
 ./Generated_Code/TU1_c.obj \
 ./Generated_Code/Vectors_c.obj \
+./Generated_Code/WAIT1_c.obj \
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -158,6 +165,14 @@ Generated_Code/Vectors_c.obj: ../Generated_Code/Vectors.c
 	@echo 'Executing target #11 $<'
 	@echo 'Invoking: ARM Compiler'
 	"$(ARM_ToolsDirEnv)/mwccarm" -gccinc @@"Generated_Code/Vectors.args" -o "Generated_Code/Vectors_c.obj" -c "$<" -MD -gccdep
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Generated_Code/WAIT1_c.obj: ../Generated_Code/WAIT1.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #12 $<'
+	@echo 'Invoking: ARM Compiler'
+	"$(ARM_ToolsDirEnv)/mwccarm" -gccinc @@"Generated_Code/WAIT1.args" -o "Generated_Code/WAIT1_c.obj" -c "$<" -MD -gccdep
 	@echo 'Finished building: $<'
 	@echo ' '
 

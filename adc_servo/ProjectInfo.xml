@@ -58,6 +58,7 @@
       <PathName>C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\SERVO1.c</PathName>
       <PathName>C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\TU1.c</PathName>
       <PathName>C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\Vectors.c</PathName>
+      <PathName>C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\WAIT1.c</PathName>
       <PathName>C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Sources\Events.c</PathName>
       <PathName>C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Sources\main.c</PathName>
     </GeneratedCs>
@@ -74,6 +75,7 @@
       <PathName>C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\PwmLdd1.h</PathName>
       <PathName>C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\SERVO1.h</PathName>
       <PathName>C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\TU1.h</PathName>
+      <PathName>C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\WAIT1.h</PathName>
       <PathName>C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Sources\Events.h</PathName>
       <PathName>C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Static_Code\IO_Map\MK60F12.h</PathName>
       <PathName>C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Static_Code\PDD\ADC_PDD.h</PathName>

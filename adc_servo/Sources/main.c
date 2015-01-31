@@ -36,6 +36,7 @@
 #include "Pwm1.h"
 #include "PwmLdd1.h"
 #include "TU1.h"
+#include "WAIT1.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -47,9 +48,9 @@
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
 int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
-+{
+{
   /* Write your local variable definition here */
-uint8_t adc_value;
+byte adc_value;
   /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
   PE_low_level_init();
   /*** End of Processor Expert internal initialization.                    ***/
@@ -61,7 +62,7 @@ while(1)
 {
 	AD1_Measure();
 	AD1_GetValue(&adc_value);
-	SERVO1_SetPWMDutyUs(600+adc_value*(2500-600));
+	SERVO1_SetPos(adc_value);	
 }
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
   /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/

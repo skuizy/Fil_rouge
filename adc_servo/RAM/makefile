@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-#Progress monitor hint: 11
+#Progress monitor hint: 12
 first : all
 -include ../makefile.init
 
@@ -68,7 +68,7 @@ all: warning-messages explicit-dependencies adc_servo.afx
 # Tool invocations
 adc_servo.afx: $(OBJS) $(LCF_BUILD_DEPENCENCY) $(USER_OBJS) $(LCF_SRCS)
 	@echo 'Building target: $@'
-	@echo 'Executing target #12 $@'
+	@echo 'Executing target #13 $@'
 	@echo 'Invoking: ARM Linker'
 	"$(ARM_ToolsDirEnv)/mwldarm" -o "adc_servo.afx" @@"adc_servo.args"  $(USER_OBJS_QUOTED) $(LIBS_QUOTED)
 	@echo 'Finished building target: $@'

@@ -423,7 +423,7 @@ PE_DEBUGHALT();
                   <PLL_module v="Disabled" />
                   <PLL_module_in_Stop v="Disabled" />
                   <External_reference_select v="System oscillator 0" />
-                  <PLL_output__MHz_ v="0" />
+                  <PLL_output__MHz_ v="120" />
                   <Reference_clock_divider v="Auto select" />
                   <PLL_reference_clock__MHz_ v="1" />
                   <Multiplication_factor v="Auto select" />
@@ -432,7 +432,7 @@ PE_DEBUGHALT();
                 <group name="PLL 1 settings">
                   <PLL_module v="Disabled" />
                   <PLL_module_in_Stop v="Disabled" />
-                  <PLL_output__MHz_ v="0" />
+                  <PLL_output__MHz_ v="120" />
                   <External_reference_select v="System oscillator 0" />
                   <Reference_clock_divider v="Auto select" />
                   <PLL_reference_clock__MHz_ v="1" />
@@ -623,8 +623,6 @@ PE_DEBUGHALT();
             <Bandgap_buffer v="Disabled" />
             <group name="LVD interrupt">
               <Interrupt v="INT_LVD_LVW" />
-              <Interrupt_request v="Disabled" />
-              <Interrupt_priority v="0 (Highest)" />
               <LVD_interrupt v="Disabled" />
               <LVW_interrupt v="Disabled" />
             </group>
@@ -749,17 +747,6 @@ PE_DEBUGHALT();
 ]]></StrgList>
         </Unhandled_int_code>
       </enumgroup>
-      <group name="User initialization">
-        <User_data_declarations>
-          <StrgList></StrgList>
-        </User_data_declarations>
-        <User_code_before_PE_initialization>
-          <StrgList></StrgList>
-        </User_code_before_PE_initialization>
-        <User_code_after_PE_initialization>
-          <StrgList></StrgList>
-        </User_code_after_PE_initialization>
-      </group>
       <boolgroup name="Generate debugger files" v="yes">
         <Generate_mem_file v="yes" />
       </boolgroup>
@@ -823,10 +810,7 @@ PE_DEBUGHALT();
           <Component_name v="AdcLdd1" />
           <A_D_converter v="ADC1" />
           <Discontinuous_mode v="no" />
-          <boolgroup name="Interrupt service/event" v="Enabled">
-            <A_D_interrupt v="INT_ADC1" />
-            <A_D_interrupt_priority v="medium priority" />
-          </boolgroup>
+          <boolgroup name="Interrupt service/event" v="Disabled" />
           <boolgroup name="DMA" v="Disabled" />
           <list name="A/D channel list" v="1">
             <group name="Channel 0">
@@ -866,7 +850,7 @@ PE_DEBUGHALT();
               <Auto_initialization v="no" />
             </list>
             <group name="Event mask">
-              <OnMeasurementComplete v="Enabled" />
+              <OnMeasurementComplete v="Disabled" />
               <OnError v="Disabled" />
             </group>
           </group>
@@ -912,16 +896,11 @@ PE_DEBUGHALT();
         </Methods>
         <Events>
           <Event_module_name v="Events" />
-          <event name="OnMeasurementComplete" v="generate code">
-            <Event_procedure_name v="AdcLdd1_OnMeasurementComplete" />
-          </event>
+          <event name="OnMeasurementComplete" v="don&amp;apos;t generate code" />
           <event name="OnError" v="don&amp;apos;t generate code" />
         </Events>
       </inhrbean>
-      <boolgroup name="Interrupt service/event" v="Enabled">
-        <A_D_interrupt v="INT_ADC1" />
-        <A_D_interrupt_priority v="medium priority" />
-      </boolgroup>
+      <boolgroup name="Interrupt service/event" v="Disabled" />
       <list name="A/D channels" v="1">
         <group name="Channel0">
           <A_D_channel__pin_ v="PGA3_DM/ADC3_DM0/ADC2_DM3/ADC1_DM1" />
@@ -976,14 +955,8 @@ PE_DEBUGHALT();
       <Event_module_name v="Events" />
       <event name="BeforeNewSpeed" v="don&amp;apos;t generate code" />
       <event name="AfterNewSpeed" v="don&amp;apos;t generate code" />
-      <event name="OnEnd" v="generate code">
-        <Event_procedure_name v="AD1_OnEnd" />
-        <Priority v="same as interrupt" />
-      </event>
-      <event name="OnCalibrationEnd" v="generate code">
-        <Event_procedure_name v="AD1_OnCalibrationEnd" />
-        <Priority v="same as interrupt" />
-      </event>
+      <event name="OnEnd" v="don&amp;apos;t generate code" />
+      <event name="OnCalibrationEnd" v="don&amp;apos;t generate code" />
     </Events>
   </Bean>
   <Bean name="SERVO1" type="Servo">
@@ -992,8 +965,8 @@ PE_DEBUGHALT();
       <Component_name v="SERVO1" />
       <Inverted_PWM v="no" />
       <Init_PWM__us_ v="1500" />
-      <Min_Pos_PWM__us_ v="600" />
-      <Max_Pos_PWM__us_ v="2500" />
+      <Min_Pos_PWM__us_ v="900" />
+      <Max_Pos_PWM__us_ v="2100" />
       <PWM_Period__us_ v="20000" />
       <group name="System">
         <boolgroup name="Timed Move" v="Disabled" />
@@ -1226,6 +1199,29 @@ PE_DEBUGHALT();
       <event name="OnChannel5" v="don&amp;apos;t generate code" />
       <event name="OnChannel6" v="don&amp;apos;t generate code" />
       <event name="OnChannel7" v="don&amp;apos;t generate code" />
+    </Events>
+  </Bean>
+  <Bean name="WAIT1" type="Wait">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="WAIT1" />
+      <boolgroup name="Manual Clock Values" v="Disabled" />
+      <Delay100usFunction v="Delay100US" />
+      <boolgroup name="RTOS" v="Disabled" />
+      <boolgroup name="Watchdog" v="Disabled" />
+    </Properties>
+    <Methods>
+      <Wait10Cycles v="generate code" />
+      <Wait100Cycles v="generate code" />
+      <WaitCycles v="generate code" />
+      <WaitLongCycles v="generate code" />
+      <Waitms v="generate code" />
+      <Waitus v="generate code" />
+      <Waitns v="generate code" />
+      <WaitOSms v="generate code" />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
     </Events>
   </Bean>
 </PE_PROJECT_SETTINGS_DOCUMENTATION>

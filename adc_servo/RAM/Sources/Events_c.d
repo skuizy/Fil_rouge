@@ -25,4 +25,5 @@ Sources/Events_c.obj: C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Sour
 	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\Pwm1.h \
 	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\PwmLdd1.h \
 	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\TU1.h \
-	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Static_Code\PDD\FTM_PDD.h 
+	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Static_Code\PDD\FTM_PDD.h \
+	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\WAIT1.h 

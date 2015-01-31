@@ -6,7 +6,7 @@
 **     Component   : Servo
 **     Version     : Component 01.066, Driver 01.00, CPU db: 3.00.000
 **     Compiler    : CodeWarrior ARM C Compiler
-**     Date/Time   : 2015-01-31, 12:49, # CodeGen: 1
+**     Date/Time   : 2015-01-31, 19:28, # CodeGen: 8
 **     Abstract    :
 **
 This component implements a driver for hobby servos.

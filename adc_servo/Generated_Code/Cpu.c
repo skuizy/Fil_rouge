@@ -7,7 +7,7 @@
 **     Version     : Component 01.006, Driver 01.04, CPU db: 3.00.000
 **     Datasheet   : K60P144M150SF3RM, Rev. 2, Dec 2011
 **     Compiler    : CodeWarrior ARM C Compiler
-**     Date/Time   : 2015-01-31, 12:49, # CodeGen: 1
+**     Date/Time   : 2015-01-31, 19:18, # CodeGen: 7
 **     Abstract    :
 **
 **     Settings    :
@@ -66,6 +66,7 @@
 #include "Pwm1.h"
 #include "PwmLdd1.h"
 #include "TU1.h"
+#include "WAIT1.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"

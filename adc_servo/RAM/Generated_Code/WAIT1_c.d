@@ -1,8 +1,8 @@
-Sources/main_c.obj: C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Sources\main.c \
+Generated_Code/WAIT1_c.obj: C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\WAIT1.c \
 	C:\Freescale\CW\ MCU\ v10.6\MCU\ARM_EABI_Support\ewl\EWL_C\include\lib_ewl.prefix \
 	C:\Freescale\CW\ MCU\ v10.6\MCU\ARM_EABI_Support\ewl\EWL_C\include\common.prefix \
 	C:\Freescale\CW\ MCU\ v10.6\MCU\ARM_EABI_Support\ewl\EWL_C\include\ewl_c_version.h \
-	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\Cpu.h \
+	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\WAIT1.h \
 	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\PE_Types.h \
 	C:\Freescale\CW\ MCU\ v10.6\MCU\ARM_EABI_Support\ewl\EWL_C\include\stdint.h \
 	C:\Freescale\CW\ MCU\ v10.6\MCU\ARM_EABI_Support\ewl\EWL_C\include\ansi_parms.h \
@@ -16,14 +16,4 @@ Sources/main_c.obj: C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Source
 	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\PE_Const.h \
 	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\IO_Map.h \
 	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Static_Code\IO_Map\MK60F12.h \
-	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Sources\Events.h \
-	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\AD1.h \
-	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\AdcLdd1.h \
-	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Static_Code\PDD\ADC_PDD.h \
-	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Static_Code\PDD\PDD_Types.h \
-	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\SERVO1.h \
-	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\Pwm1.h \
-	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\PwmLdd1.h \
-	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\TU1.h \
-	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Static_Code\PDD\FTM_PDD.h \
-	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\WAIT1.h 
+	C:\Users\Nicolas\Documents\GitHub\Fil_rouge\adc_servo\Generated_Code\Cpu.h 

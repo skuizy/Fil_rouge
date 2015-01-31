@@ -1,0 +1,28 @@
+-proc cortex-m4
+-fp vfpv4
+-little
+-msgstyle parseable
+-g3
+-thumb
+-interworking
+-lavender model=ewl ,print=int ,scan=int ,io=raw
+-cwd include
+-enc ascii
+-i
+"$(ProjDirPath)/Project_Headers"
+-i
+"$(MCUToolsBaseDirEnv)/ARM_EABI_Support/ewl/EWL_C/include"
+-i
+"$(ProjDirPath)/Generated_Code"
+-i
+"$(ProjDirPath)/Sources"
+-i
+"$(ProjDirPath)/Static_Code/PDD"
+-i
+"$(ProjDirPath)/Static_Code/IO_Map"
+-inline on
+-generic_symbol_names off
+-sdata 8
+-char signed
+-Cpp_Exceptions off
+-iso_templates on

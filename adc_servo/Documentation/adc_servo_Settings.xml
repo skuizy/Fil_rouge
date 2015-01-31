@@ -423,7 +423,7 @@ PE_DEBUGHALT();
                   <PLL_module v="Disabled" />
                   <PLL_module_in_Stop v="Disabled" />
                   <External_reference_select v="System oscillator 0" />
-                  <PLL_output__MHz_ v="0" />
+                  <PLL_output__MHz_ v="120" />
                   <Reference_clock_divider v="Auto select" />
                   <PLL_reference_clock__MHz_ v="1" />
                   <Multiplication_factor v="Auto select" />
@@ -432,7 +432,7 @@ PE_DEBUGHALT();
                 <group name="PLL 1 settings">
                   <PLL_module v="Disabled" />
                   <PLL_module_in_Stop v="Disabled" />
-                  <PLL_output__MHz_ v="0" />
+                  <PLL_output__MHz_ v="120" />
                   <External_reference_select v="System oscillator 0" />
                   <Reference_clock_divider v="Auto select" />
                   <PLL_reference_clock__MHz_ v="1" />
@@ -623,8 +623,6 @@ PE_DEBUGHALT();
             <Bandgap_buffer v="Disabled" />
             <group name="LVD interrupt">
               <Interrupt v="INT_LVD_LVW" />
-              <Interrupt_request v="Disabled" />
-              <Interrupt_priority v="0 (Highest)" />
               <LVD_interrupt v="Disabled" />
               <LVW_interrupt v="Disabled" />
             </group>
@@ -749,17 +747,6 @@ PE_DEBUGHALT();
 ]]></StrgList>
         </Unhandled_int_code>
       </enumgroup>
-      <group name="User initialization">
-        <User_data_declarations>
-          <StrgList></StrgList>
-        </User_data_declarations>
-        <User_code_before_PE_initialization>
-          <StrgList></StrgList>
-        </User_code_before_PE_initialization>
-        <User_code_after_PE_initialization>
-          <StrgList></StrgList>
-        </User_code_after_PE_initialization>
-      </group>
       <boolgroup name="Generate debugger files" v="yes">
         <Generate_mem_file v="yes" />
       </boolgroup>
@@ -1212,6 +1199,29 @@ PE_DEBUGHALT();
       <event name="OnChannel5" v="don&amp;apos;t generate code" />
       <event name="OnChannel6" v="don&amp;apos;t generate code" />
       <event name="OnChannel7" v="don&amp;apos;t generate code" />
+    </Events>
+  </Bean>
+  <Bean name="WAIT1" type="Wait">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="WAIT1" />
+      <boolgroup name="Manual Clock Values" v="Disabled" />
+      <Delay100usFunction v="Delay100US" />
+      <boolgroup name="RTOS" v="Disabled" />
+      <boolgroup name="Watchdog" v="Disabled" />
+    </Properties>
+    <Methods>
+      <Wait10Cycles v="generate code" />
+      <Wait100Cycles v="generate code" />
+      <WaitCycles v="generate code" />
+      <WaitLongCycles v="generate code" />
+      <Waitms v="generate code" />
+      <Waitus v="generate code" />
+      <Waitns v="generate code" />
+      <WaitOSms v="generate code" />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
     </Events>
   </Bean>
 </PE_PROJECT_SETTINGS_DOCUMENTATION>

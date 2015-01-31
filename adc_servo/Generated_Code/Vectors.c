@@ -5,7 +5,7 @@
 **     Processor   : MK60FN1M0VLQ12
 **     Version     : Component 01.006, Driver 01.04, CPU db: 3.00.000
 **     Compiler    : CodeWarrior ARM C Compiler
-**     Date/Time   : 2015-01-31, 12:57, # CodeGen: 3
+**     Date/Time   : 2015-01-31, 19:18, # CodeGen: 7
 **     Abstract    :
 **
 **     Settings    :
@@ -60,6 +60,7 @@
   #include "Pwm1.h"
   #include "PwmLdd1.h"
   #include "TU1.h"
+  #include "WAIT1.h"
   #include "Events.h"
 
 
